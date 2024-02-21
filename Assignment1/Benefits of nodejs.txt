@@ -1,0 +1,11 @@
+* Benefits of NodeJS
+1) Easy to learn: Entire Application we build on JavaScript.
+2) Large community support: There are n number of Application running on node.
+3) WebApp development speed: Rapid development due to non-blocking I/O and event-driven architecture.
+4) Cross-Platform Development: It allows for seamless development across various operating systems.
+5) Improved App response time: Asynchronous nature enhances app responsiveness and user experience.
+6) Caching: Efficient caching mechanisms for faster data retrieval and performance optimization.
+7) High Performance: Built on V8 engine, and delivers high-speed performance for applications.
+8) Single programming Language: JavaScript for both server-side and client-side development simplifies the development process.
+9) Scalability: Ability to scale horizontally and vertically to handle growing user demands.
+10) Extensibility: Node.js supports easy integration of modules, enhancing functionality and flexibility.
