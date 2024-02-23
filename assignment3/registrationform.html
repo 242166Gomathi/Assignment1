@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    function showPopup() {
+      alert("Registration successful!");
+      document.getElementById("registrationForm").reset();
+    }
+
+    // function checkLength(element) {
+    //   if (element.value.length > 20) {
+    //     alert("Maximum length exceeded!");
+    //     // Truncate the input value to 20 characters
+    //     element.value = element.value.substring(0, 20);
+    //   }
+    // }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" action="#" onsubmit="showPopup(); return false;">
+      <div class="form-group">
+        <div class="input-field">
+          <i class="fa fa-user"></i>
+          <input type="text" name="name" placeholder="First Name" required />
+        </div>
+        <div class="input-field">
+          <i class="fa fa-user"></i>
+          <input type="text" name="name" placeholder="Last Name" required />
+        </div>
+        <div class="input-field">
+          <i class="fa fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="input-field">
+          <i class="fa fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <div class="input-field">
+          <i class="fa fa-lock"></i>
+          <input type="password" name="password" placeholder="Re-type Password" required />
+        </div>
+
+        <div class="input-field">
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+        </div>
+
+        <div class="input-field select-option">
+          <select>
+            <option>Select a country</option>
+            <option>India</option>
+            <option>Netherlands</option>
+            <option>America</option>
+            <option>Singapore</option>
+          </select>
+          <div class="select-arrow"></div>
+        </div>
+
+        <div class="input-field switch-field color-switch">
+          <input type="checkbox" id="color-switch" name="color-switch">
+          <label for="color-switch"></label>
+        </div>
+
+        <div class="input-field">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree with terms and conditions</label>
+        </div>
+
+        <div class="input-field">
+          <textarea name="message" placeholder="Any Queries?" required></textarea>
+        </div>
+
+        <div class="input-field">
+          <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="input-field">
+          <a href="https://www.programiz.com/html">Visit our website for further assistance</a>
+        </div>
+
+        <div class="input-field">
+          <video width="320" height="240" controls>
+            <source src="big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <input class="button" type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
