@@ -1,0 +1,83 @@
+.registration-form-container {
+  max-width: 350px;
+  margin: 1px auto;
+  padding: 25px;
+  border: 1px solid #020202;
+  border-radius: 5px;
+  background-color: #bcc2cd;
+  overflow: hidden; }
+
+.registration-form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333; 
+}
+.button1 {
+  text-align: center; 
+}
+
+.button1 button {
+  background-color: #007bff; 
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form-group {
+  margin-bottom: 20px; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555; 
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 15px; 
+}
+
+.radio-group label {
+  margin-right: 15px;
+  color: #555; 
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: #007bff; 
+  color: #d74343;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.name-inputs {
+  display: flex;
+  margin-bottom: 15px; 
+}
+
+.name-inputs div {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
