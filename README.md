@@ -5,3 +5,5 @@
 4. React Basic Hello world with Routing.(assignment4)
 5. Implementing registration page in ReactJs.(Assignment5)
 6. Class Components and Functional Components. (Assignment6)
+7. Event Handling, Data Binding, Conditional rendering (assignment7)
+
