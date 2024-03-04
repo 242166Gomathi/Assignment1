@@ -6,4 +6,5 @@
 5. Implementing registration page in ReactJs.(Assignment5)
 6. Class Components and Functional Components. (Assignment6)
 7. Event Handling, Data Binding, Conditional rendering (assignment7)
+8. React LifeCycle
 
