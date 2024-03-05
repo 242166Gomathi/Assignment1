@@ -7,4 +7,5 @@
 6. Class Components and Functional Components. (Assignment6)
 7. Event Handling, Data Binding, Conditional rendering (assignment7)
 8. React LifeCycle
+9. Memo & Fragments, Routing, Mat UI & Antd library, ChatJS
 
