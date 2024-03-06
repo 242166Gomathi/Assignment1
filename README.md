@@ -8,4 +8,5 @@
 7. Event Handling, Data Binding, Conditional rendering (assignment7)
 8. React LifeCycle
 9. Memo & Fragments, Routing, Mat UI & Antd library, ChatJS
+10. Create login page, registration page  & dashboard page use matui or antd library components (create dashboard with chartJS components )
 
