@@ -9,5 +9,6 @@
 8. React LifeCycle
 9. Memo & Fragments, Routing, Mat UI & Antd library, ChatJS
 10. Create login page, registration page  & dashboard page use matui or antd library components (create dashboard with chartJS components )
-11. Create login page, registration page  & profile  page using react Hooks 
+11. Create login page, registration page  & profile  page using react Hooks
+12. Create login page, registration page  & dashboard page use matui or antd library components with form validation
 
