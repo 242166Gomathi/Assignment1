@@ -1,38 +1,54 @@
-// store.js
-import { createStore } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
+import { persistReducer, persistStore } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 const initialState = {
-  name: 'Gomathi',
-  country: 'INDIA',
-  gender: 'Female',
-  panNumber: 'ABCDE1234F',
-  tenth: {
-    instituteName: 'Chaitra',
-    cgpa: 8
+  user: {
+    name: 'Gomathi',
+    country: 'India',
+    gender: 'Female',
+    pan: '12345908987',
+    education: {
+      tenth: { instituteName: 'Chaitra', cgpa: '8' },
+      higherSecondary: { instituteName: 'Chaitra', cgpa: '8' },
+      graduation: { instituteName: 'SJE', cgpa: '7' },
+    },
+    certifications: ["Java"],
   },
-  higherSecondary: {
-    instituteName: 'Chaitra',
-    cgpa: 8
-  },
-  graduation: {
-    instituteName: 'JSS',
-    cgpa: 8
-  },
-  certifications: ['React Certified', 'AWS Certified']
 };
+const persistConfig = {
+    key: 'roots',
+    storage,
+  };
+  
+const rootReducer = (state = initialState, action) => {
+    console.log(action.type);
+    switch(action.type) {
+      case 'ADD_CERTIFICATION':
+        console.log(action.payload.certification)
+        const updatedCertifications = [...state.user.certifications, action.payload.certification];
+        console.log("Updated Certifications:", updatedCertifications);
+        return {
+          ...state,
+          user: {
+            ...state.user,
+            certifications: updatedCertifications,
+          },
+        };
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'ADD_CERTIFICATION':
-      return {
-        ...state,
-        certifications: [...state.certifications, action.payload]
-      };
-    default:
-      return state;
-  }
-};
+      default:
+        console.log("inside switch")
+        return state;
+    }
+  };
 
-const store = createStore(reducer);
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+const store = configureStore({
+  reducer: persistedReducer,
+});
+
+export const persistor = persistStore(store);
+
 
 export default store;

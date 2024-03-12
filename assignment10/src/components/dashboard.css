@@ -1,0 +1,31 @@
+/* Dashboard.css */
+
+/* Style for the main container */
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the greeting message */
+  .dashboard-greeting {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the profile link */
+  .dashboard-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for the profile link */
+  .dashboard-link:hover {
+    text-decoration: underline;
+  }
+  

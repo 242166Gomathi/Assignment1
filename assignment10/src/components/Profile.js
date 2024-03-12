@@ -1,25 +1,21 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import '../styles/Dashboard.css'; 
+import './Style.css'; 
 
-function Profile() {
-  const { name, country, gender, panNumber } = useSelector((state) => state);
+const Profile = () => {
+  const user = useSelector(state => state.user);
 
   return (
     <div className="profile-container">
-      <div className="profile-details">
-        <h2>Personal Details</h2>
-        <p>Name: {name}</p>
-        <p>Country: {country}</p>
-        <p>Gender: {gender}</p>
-        <p>Permanent Account Number: {panNumber}</p>
-      </div>
-      <div className="profile-education-link-container">
-        <Link to="/education-details" className="education-details-link">Education Details</Link>
-      </div>
+      <h2>Personal Details</h2>
+      <div>Name: {user.name}</div>
+      <div>Country: {user.country}</div>
+      <div>Gender: {user.gender}</div>
+      <div>PAN: {user.pan}</div>
+      <Link to="/education">Education Details</Link>
     </div>
   );
-}
+};
 
 export default Profile;
